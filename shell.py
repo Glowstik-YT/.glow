@@ -1,7 +1,7 @@
 import glow
 
 while True:
-	text = input('glow █ ')
+	text = input('glow > ')
 	if text.strip() == "": continue
 	result, error = glow.run('<stdin>', text)
 
