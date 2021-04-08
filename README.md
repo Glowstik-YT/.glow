@@ -23,4 +23,5 @@ Simple For Loop:
 ```
 for i = 0 to 5 then
   print("its going up bois!")
+end
 ```
