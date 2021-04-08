@@ -1,0 +1,10 @@
+#whaddup
+
+print("why are you geh?")
+
+#input("pick a number")
+
+var num = 1
+
+if num == 5 then
+    print("yes you are gae")
