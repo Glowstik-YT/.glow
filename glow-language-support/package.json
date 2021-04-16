@@ -1,0 +1,48 @@
+{
+    "name": "glow-language-support",
+    "displayName": "Glow Language Support",
+    "description": "Glow, a bhad language. -_-",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "publisher": "AryanAhire",
+    "author": {
+        "name": "Aryan Ahire"
+    },
+    "homepage": "https://github.com/Glowstik-YT/.glow/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Glowstik-YT/.glow/"
+    },
+    "bugs": {
+        "url": "https://github.com/Glowstik-YT/.glow/issues"
+    },
+    "icon": "icon.png",
+    "license": "GPLv3",
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "glow",
+                "aliases": [
+                    "GlowScript",
+                    "glow"
+                ],
+                "extensions": [
+                    ".glow"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "glow",
+                "scopeName": "source.glow",
+                "path": "./syntaxes/glow.tmLanguage.json"
+            }
+        ]
+    }
+}

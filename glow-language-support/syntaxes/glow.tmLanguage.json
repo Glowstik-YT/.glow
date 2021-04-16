@@ -1,0 +1,110 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "GlowScript",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#builtinfunctions"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.glow",
+					"match": "\\b(if|then|var)\\b"
+				},
+				{
+					"name": "keyword.operator.glow",
+					"match": "=="
+				},
+				{
+					"name": "keyword.operator.glow",
+					"match": "="
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.glow",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.glow",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "comment",
+			"begin": "#",
+			"end": "\n"
+		},
+		"builtinfunctions": {
+			"name": "builtinfunctions",
+			"patterns": [
+				{
+					"name": "variable.function",
+					"match": "print"
+				}
+			]
+		},
+		"numbers": {
+			"name": "numbers",
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "0"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "1"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "2"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "3"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "4"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "5"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "6"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "7"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "8"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "9"
+				}
+			]
+		}
+	},
+	"scopeName": "source.glow"
+}
